@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.AddTypeActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tool7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:minHeight="?attr/actionBarSize">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:gravity="center"
+                android:textSize="22dp"
+                android:text="Thêm"
+                android:textColor="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:imeOptions="actionNext"
+            android:id="@+id/edtLoaiSach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Loại sách"
+            android:inputType="text"
+            android:maxLines="1"
+            android:singleLine="true" />
+    </android.support.design.widget.TextInputLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnThemLoai"
+            android:layout_marginRight="100dp"
+            style="?android:textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shadow"
+            android:text="Thêm"
+            android:onClick="themloai"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/btnHuyLoai"
+            style="?android:textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shadow"
+            android:text="Xóa"
+            android:onClick="huyloai"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>
