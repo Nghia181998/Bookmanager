@@ -9,13 +9,12 @@ import android.view.View;
 import vn.edu.poly.bookmanager.R;
 
 public class HomeActivity extends AppCompatActivity {
-    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        toolbar = findViewById(R.id.tool);
+       Toolbar toolbar = findViewById(R.id.tool);
         setSupportActionBar(toolbar);
     }
 
@@ -30,7 +29,7 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     public void loaisach(View view) {
-        Intent intent = new Intent(getApplicationContext(), TypeBookManagerMainActivity.class);
+        Intent intent = new Intent(getApplicationContext(), TypeBookManagerActivity.class);
         startActivity(intent);
     }
 
@@ -40,7 +39,7 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     public void hoadon(View view) {
-        Intent intent = new Intent(getApplicationContext(), HoaDonActivity.class);
+        Intent intent = new Intent(getApplicationContext(), BillManagerActivity.class);
         startActivity(intent);
     }
 
